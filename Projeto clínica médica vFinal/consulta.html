@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="p-br">
+
+<head>
+	<title>Clínica Clean</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+	<link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+	<link
+		href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+		rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext"
+		rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header class="py-3">
+		<div class="container">
+			<nav class="d-lg-flex">
+				<div class="login-icon ml-2">
+					<a class="user" href="index.html">Pagina Inicial</a>
+				</div>
+			</nav>
+			<div class="clear"></div>
+		</div>
+	</header>
+	<div class="innerpage-banner-agenda" id="home">
+		<div class="inner-page-layer-agenda">
+		</div>
+	</div>
+	<section class="mail pt-lg-5 pt-4">
+		<div class="container pt-lg-5">
+			<div class="alert alert-success" id="sucesso" style="display: none;" role="alert">
+			</div>
+			<div class="alert alert-warning" id="erro" style="display: none;" role="alert">
+			</div>
+			<h2 class="heading text-center mb-sm-5 mb-4 " style="text-decoration:underline ;">Agende sua Consulta </h2>
+			<div class="row agileinfo_mail_grids d-flex justify-content-center">
+				<div class="col-lg-8 agileinfo_mail_grid_right ">
+					<form action="#" method="post">
+						<div class="row">
+							<div class="col-md-12 wthree_contact_left_grid pr-md-0">
+								<div class="form-group">
+									<div class="form-group">
+										<label>Paciente</label>
+										<select type="text" name="paciente" class="form-control" required="">
+											<option value="">Selecione um paciente</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label>Médico</label>
+										<select type="text" name="medico" class="form-control" required="">
+											<option value="">Selecione um médico</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label>Data</label>
+									<input type="date" name="data" class="form-control">
+								</div>
+								<div class="form-group">
+									<label>Horário</label>
+									<select type="text" name="horario" class="form-control" required="">
+										<option value="" disabled>Manhã</option>
+										<option value="10:00">10:00</option>
+										<option value="10:30">10:30</option>
+										<option value="11:00">11:00</option>
+										<option value="11:30">11:30</option>
+										<option disabled>Tarde</option>
+										<option value="13:00">13:00</option>
+										<option value="13:30">13:30</option>
+										<option value="14:00">14:00</option>
+										<option value="14:30">14:30</option>
+										<option value="15:00">15:00</option>
+										<option value="15:30">15:30</option>
+										<option value="16:00">16:00</option>
+										<option value="16:30">16:30</option>
+									</select>
+								</div>
+
+							</div>
+
+							<div class="col-md-12">
+								<div class="submit-buttons">
+									<button type="button" id="btn" class="btn">Enviar</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="js/controllers/Agendamento.js"></script>
+		<script src="js/controllers/NewMedico.js"></script>
+		<script src="js/controllers/NewPaciente.js"></script>
+		<script src="js/consulta.js"></script>
+
+</body>
+
+</html>
